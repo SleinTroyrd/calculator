@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    margin: auto;
+    width: 330px;
+    height: 500px;
+    border: 2px solid rgb(151, 142, 142);
+    background-color:#000 ;
+}
+
+button {
+    display: block; 
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align:center;
+    width: 70px;
+    height:70px;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.calculator__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.window {
+    font-size: 45px;
+    color:aliceblue;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100px;
+}
+
+.records{
+    z-index: 2;    
+}
+
+.butttons {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.butttons :active {
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transition-duration: .2s;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .point{
+    color:rgb(255, 255, 255);
+    background-color:#333333;
+    border:none;
+}
+
+.zero {
+    width: 150px;
+    border-radius: 45%;
+}
+
+.result, .sum, .minus, .multiplication, .division {
+    color:rgb(255, 255, 255);
+    background-color:#ed9225;
+    border:none;
+    font-size: 35px;
+}
+
+.ac, .pl_mn, .percent{
+    color:rgb(0, 0, 0);
+    background-color:#a4a4a4;
+    border:none;
+}
+
+button:hover{
+    border:1px solid rgb(255, 255, 255);
+}
